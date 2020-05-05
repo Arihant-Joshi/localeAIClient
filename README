@@ -9,3 +9,5 @@ optional arguments:
   -c, --csv             Flag: The File is in CSV format(Get/Post/Put)
   -b BOOKINGID, --bookingId BOOKINGID
                         Booking ID([Get]/Delete)
+
+Please Consult the wiki for more help
