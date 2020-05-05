@@ -49,12 +49,16 @@ parser.add_argument('-c','--csv',action = "store_true",help="Flag: The File is i
 parser.add_argument('-b','--bookingId',type = int,help="Booking ID([Get]/Delete)")
 
 client = Client()
+
 username = "djAdmin"
 password = "locale.ai"
+print("####USE THESE CREDENTIALS####")
+print(f"USERNAME:{username}")
+print(f"PASSWORD:{password}")
 
 while(True):
-	#username = input("USERNAME:")
-	#password = input("PASSWORD:")
+	username = input("USERNAME:")
+	password = input("PASSWORD:")
 	response = client.getToken(username,password)
 	if(type(response) == str and response[:6] == "ERROR:"):
 		print(response)

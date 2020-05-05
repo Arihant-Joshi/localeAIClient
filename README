@@ -1,0 +1,11 @@
+usage: [-h] [-p PATH] [-c] [-b BOOKINGID] {get,put,post,delete,help,quit}
+
+positional arguments:
+  {get,put,post,delete,help,quit}
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p PATH, --path PATH  Path to Input/Output File(Get/Post/Put)
+  -c, --csv             Flag: The File is in CSV format(Get/Post/Put)
+  -b BOOKINGID, --bookingId BOOKINGID
+                        Booking ID([Get]/Delete)
